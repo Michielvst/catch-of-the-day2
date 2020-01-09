@@ -8,7 +8,7 @@ class EditFishForm extends React.Component {
             name: PropTypes.string.isRequired,
             desc: PropTypes.string.isRequired,
             status: PropTypes.string.isRequired,
-            price: PropTypes.number.isRequired
+            price: PropTypes.number.isRequired,
         }),
         index: PropTypes.string.isRequired,
         updateFish: PropTypes.func.isRequired
