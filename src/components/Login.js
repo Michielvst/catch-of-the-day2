@@ -11,12 +11,6 @@ const Login = (props) => (
             Log In With Github
         </button>
         <button 
-            className="twitter"
-            onClick={() => props.authenticate("Twitter")}
-        >
-            Log In With Twitter
-        </button>
-        <button 
             className="facebook"
             onClick={() => props.authenticate("Facebook")}
         >
