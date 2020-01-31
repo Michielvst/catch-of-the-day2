@@ -55,25 +55,25 @@ class Inventory extends React.Component {
   }
 
   render() {
-    const logout = <button onClick={this.logout}>Log Out!</button>
+    //const logout = <button onClick={this.logout}>Log Out!</button>
 
-    if(!this.state.uid) {
-      return <Login authenticate={this.authenticate} />;
-    }
+    //if(!this.state.uid) {
+    //  return <Login authenticate={this.authenticate} />;
+    //}
 
-    if(this.state.uid !== this.state.owner) {
-      return (
-        <div>
-          <p>Sorry you are not the owner!</p>
-          {logout}
-        </div>
-      );
-    }
+    //if(this.state.uid !== this.state.owner) {
+    //  return (
+    //    <div>
+    //      <p>Sorry you are not the owner!</p>
+    //      {logout}
+    //    </div>
+    //  );
+    //}
 
     return (
       <div className="inventory">
         <h2>Inventory</h2>
-        {logout}
+
         {Object.keys(this.props.fishes).map(key => (
           <EditFishForm 
             key={key} 
